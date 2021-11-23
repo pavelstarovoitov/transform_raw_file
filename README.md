@@ -7,3 +7,10 @@ Programm gets raw hex file and tranforms them into csv txt or xlsx
 - csv
 - txt
 - xlsx
+# Usage Example
+```sh
+./open.bin --file raw  --format csv
+./open.py --file raw --format csv
+./open.py --dir ./data raw --format csv
+./open.bin --dir ./data raw --format csv
+```
