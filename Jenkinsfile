@@ -4,7 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!'
-                sh "./open.py --file raw --format txt" 
+                sh "python3 open.py --file raw --format txt" 
             }
         }
     }
