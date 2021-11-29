@@ -2,3 +2,5 @@ raw
 data/*
 result_raw.csv
 .vscode/launch.json
+open.build
+open.dist
