@@ -11,7 +11,10 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-StrLen = int(config["DEFAULT"]['StrLen'])
+try:
+    StrLen = int(config["DEFAULT"]['StrLen'])
+except KeyError:
+    StrLen = 318
 
 
 def getfilename(path, format):
