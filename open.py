@@ -11,7 +11,8 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-StrLen = config["DEFAULT"]['StrLen']
+StrLen = int(config["DEFAULT"]['StrLen'])
+
 
 def getfilename(path, format):
     if os.path.isdir(os.path.dirname(path)):
