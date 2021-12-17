@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello world!'
                 sh "./open.bin --file hexraw --format txt"
-		python3 --version 
+		sh "python3 --version" 
             }
         }
     }
